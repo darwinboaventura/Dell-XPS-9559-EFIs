@@ -56,9 +56,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-Disable_DGPU.aml</string>
+				<string>SSDT-dGPU-Off.aml</string>
 				<key>Path</key>
-				<string>SSDT-Disable_DGPU.aml</string>
+				<string>SSDT-dGPU-Off.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -692,11 +692,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>layout-id</key>
-				<data>SAAAAA==</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>disable-external-gpu</key>
@@ -766,7 +761,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>MinKernel</key>
-				<string>13 (10.9)</string>
+				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
 				<key>BundlePath</key>
@@ -1575,7 +1570,7 @@
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>ScanPolicy</key>
-			<integer>17760515</integer>
+			<integer>0</integer>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1742,17 +1737,8 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>AudioDxe.efi</string>
-			<string>CrScreenshotDxe.efi</string>
-			<string>CsmVideoDxe.efi</string>
 			<string>HfsPlus.efi</string>
-			<string>NTFS-64.efi</string>
-			<string>NvmExpressDxe.efi</string>
 			<string>OpenRuntime.efi</string>
-			<string>OsxFatBinaryDrv.efi</string>
-			<string>VBoxExt2.efi</string>
-			<string>VBoxExt4.efi</string>
-			<string>VBoxHfs.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
